@@ -54,7 +54,7 @@ def main():
             for password in f:
                 password = password.strip()
                 if brutus.attempt_brutus(password):
-                    print(f"Brutus has found the password for the user of this application which is very kind of brutus, here it is: {password}")
+                    print(f"Brutus has found the password: {password}")
                     break
     except FileNotFoundError:
         print("Directory not found")
